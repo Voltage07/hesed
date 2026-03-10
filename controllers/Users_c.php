@@ -1,5 +1,7 @@
 <?php
+// users classes from the main model (user.php)
 
+require_once __DIR__ . "/../config/url.php";
 require_once __DIR__ . "/../models/User.php";
 
 class UserController {
@@ -38,8 +40,6 @@ class UserController {
 
         $stats = [
             'total'    => count($users)
-            // 'active'   => count($users),
-            // 'new_week' => 0,
         ];
 
         include __DIR__ . '/../views/dashboard/index.php';
@@ -73,6 +73,7 @@ class UserController {
 
     public function handleCreate() {
         header('Content-Type: application/json');
+        global $base;
 
         $name  = trim($_POST['name']  ?? '');
         $email = trim($_POST['email'] ?? '');
@@ -113,7 +114,7 @@ class UserController {
             echo json_encode([
                 'success'  => true,
                 'message'  => 'User registered successfully.',
-                'redirect' => '/hesed/?page=users',
+                'redirect' => "$base/?page=users",
             ]);
         } else {
             echo json_encode([

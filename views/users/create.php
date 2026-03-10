@@ -1,11 +1,5 @@
 <?php
-/**
- * views/users/create.php
- *
- * Register a new user form.
- * Submission is handled by create.js via fetch — no page reload.
- * $currentPage and $pageTitle are set by UserController::showCreate()
- */
+/*Submission is handled by create.js via fetch*/
 require __DIR__."/../../config/url.php";
 include __DIR__ . '/../layouts/header.php';
 include __DIR__ . '/../layouts/sidebar.php';
@@ -57,4 +51,7 @@ include __DIR__ . '/../layouts/sidebar.php';
 </main>
 
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
+<script>
+    const url = "<?= $base ?>";
+</script>
 <script src="<?= $base ?>/assets/js/users/create.js"></script>

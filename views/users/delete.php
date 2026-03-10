@@ -1,12 +1,5 @@
 <?php
-/**
- * views/users/delete.php
- *
- * Delete a user page.
- * This is just the HTML shell — all search and delete
- * logic is handled by delete.js via fetch.
- * $currentPage and $pageTitle are set by UserController::showDelete()
- */
+/* logic is handled by delete.js via fetch. */
 require __DIR__."/../../config/url.php";
 include __DIR__ . '/../layouts/header.php';
 include __DIR__ . '/../layouts/sidebar.php';

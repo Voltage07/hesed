@@ -1,13 +1,5 @@
 <?php
-/**
- * views/layout/header.php
- *
- * Opens the HTML document, loads CSS, and renders the topbar.
- * Always include this first.
- *
- * Expects before including:
- *   $pageTitle   (string) — shown in <title> and topbar
- */
+//site header
 require __DIR__."/../../config/url.php";
 
 $pageTitle = $pageTitle ?? 'Admin';

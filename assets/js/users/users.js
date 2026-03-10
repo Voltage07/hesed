@@ -1,11 +1,4 @@
-/**
- * assets/js/users/users.js
- *
- * Live search for the View Users page.
- * Filters table rows client-side as the user types — no fetch needed
- * because all users are already rendered in the PHP table.
- */
-
+/* script for users.php */
 document.addEventListener('DOMContentLoaded', function () {
 
     const searchInput = document.getElementById('userSearch');

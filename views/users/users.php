@@ -1,10 +1,4 @@
 <?php
-/**
- * views/users/list.php
- *
- * Displays all users in a table with live search.
- * $users and $currentPage are set by UserController::showList()
- */
 require __DIR__."/../../config/url.php";
 include __DIR__ . '/../layouts/header.php';
 include __DIR__ . '/../layouts/sidebar.php';
@@ -64,4 +58,7 @@ $users = $users ?? [];
 </main>
 
 <?php include __DIR__ . '/../layouts/footer.php'; ?>
+<script>
+    const url = "<?= $base ?>";
+</script>
 <script src="<?= $base ?>/assets/js/users/users.js"></script>

@@ -1,24 +1,4 @@
-/**
- * assets/js/users/delete.js
- *
- * Handles the Delete User page entirely via fetch.
- *
- * Flow:
- *   1. User types a name or email and clicks Search
- *   2. fetch GET → /crud-app/?action=userSearch&q=...
- *      → UserController::handleSearch() → JSON
- *   3. Results rendered as a table into #searchResults
- *   4. User clicks Delete on a row → window.confirm()
- *   5. fetch POST → /crud-app/?action=delete  (body: id=...)
- *      → UserController::handleDelete() → JSON
- *   6. Row removed from the DOM, feedback shown
- *
- * Expected JSON from the controller:
- *   Search: { "success": true, "users": [ { id, name, email } ] }
- *   Delete: { "success": true,  "message": "User deleted successfully." }
- *           { "success": false, "message": "Could not delete user." }
- */
-
+/* script for delete.php */
 document.addEventListener('DOMContentLoaded', function () {
 
     const searchInput = document.getElementById('search_name');

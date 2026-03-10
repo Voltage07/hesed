@@ -1,10 +1,5 @@
 <?php
-/**
- * views/dashboard/index.php
- *
- * Dashboard overview page.
- * $stats and $currentPage are set by UserController::showDashboard()
- */
+// default page
 require __DIR__."/../../config/url.php";
 require __DIR__ . '/../layouts/header.php';
 require __DIR__ . '/../layouts/sidebar.php';

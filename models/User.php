@@ -1,5 +1,5 @@
 <?php
-
+// the site model for users
 class User {
 
     private $conn;

@@ -1,14 +1,6 @@
 <?php
 
-/**
- * index.php — Entry point and router
- *
- * Every URL in the app goes through here.
- * Two possible things can happen:
- *
- *   1. ?action=  is set → a JS fetch call is coming in, send back JSON
- *   2. ?page=    is set → a normal browser request, load the right view
- */
+/*index.php — Entry point*/
 
 require_once __DIR__ . '/config/db.php';
 require_once __DIR__ . '/controllers/Users_c.php';

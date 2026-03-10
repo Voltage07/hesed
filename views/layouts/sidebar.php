@@ -1,13 +1,5 @@
 <?php
-/**
- * views/layout/sidebar.php
- *
- * Left navigation sidebar.
- * Include this right after header.php.
- *
- * Expects before including:
- *   $currentPage (string) — 'dashboard' | 'create' | 'users' | 'delete'
- */
+//site sidebar
 require __DIR__."/../../config/url.php";
 
 $currentPage = $currentPage ?? 'dashboard';

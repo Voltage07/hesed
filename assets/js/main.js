@@ -1,10 +1,4 @@
-/**
- * assets/js/app.js
- *
- * Global JavaScript — loaded on every page via footer.php.
- * Handles the mobile sidebar open/close toggle only.
- * Page-specific logic lives in assets/js/users/
- */
+/*Handles the mobile sidebar open/close toggle only.*/
 
 document.addEventListener('DOMContentLoaded', function () {
 
